@@ -39,3 +39,13 @@ int main(){
 	}
 	
 }
+
+void lerPosicao(int *x, int *y){
+	printf("\nlinha: ");
+	scanf("%d",x);
+	
+	printf("\nColuna: ");
+	scanf("%d",y);
+}
+
+	
