@@ -13,7 +13,7 @@ int main(){
 	int x, y;
 	int tentativas;
 	
-	srand(time(NULL));  // Inicializa os números aleatórios
+	srand(time(NULL));  // Inicializa os números aleatórios e faz com que eles não se repitam 
 	
 	apresentarJogo();
 	gerarTesouro(&tesouroX, &tesouroY);
@@ -45,7 +45,7 @@ void apresentarJogo(){
 }
 
 void gerarTesouro(int *x, int *y){
-	*x = rand() % 5; // gera posições aleatorias para o tesouro
+	*x = rand() % 5; // gera numero aleatorio, aonde o resto sempre será entre 0 e 4
 	*y = rand() % 5;
 	
 }
